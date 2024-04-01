@@ -6,11 +6,13 @@ import tkinter as tk
 lib_dll = CDLL(r"sum_square/x64/Debug/sum_square.dll")
 
 def calculation():
+    if(not height_tf.get().isdigit()):
+        height_res.config(text = "RESULT: " + "IT'S NOT A POSITIVE INTEGER")
+        return;
+ 
     num = int(height_tf.get())
     if(num >= 1000):
         height_res.config(text = "RESULT: TOO BIG NUMBER")
-    elif(num < 0):
-        height_res.config(text = "RESULT: BELOW ZERO NUMBER")
     else:
         height_res.config(text = "RESULT: " + str(lib_dll.sum_square(num)))
 
