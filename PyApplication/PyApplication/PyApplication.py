@@ -3,7 +3,7 @@ from ctypes import *
 from tkinter import *
 import tkinter as tk
 
-lib_dll = CDLL(r"C:/Users/Acer/Desktop/Study/sum_square/x64/Debug/sum_square.dll")
+lib_dll = CDLL(r"sum_square/x64/Debug/sum_square.dll")
 
 def calculation():
     num = int(height_tf.get())
