@@ -1,0 +1,3 @@
+﻿  sum_square.cpp
+C:\Users\Acer\Desktop\Study\sum_square\sum_square\sum_square.cpp(7,20): warning C4018: <=: несоответствие типов со знаком и без знака
+  sum_square.vcxproj -> C:\Users\Acer\Desktop\Study\sum_square\x64\Debug\sum_square.dll
